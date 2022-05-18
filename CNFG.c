@@ -12,6 +12,8 @@
 #include "CNFGEGLLeanAndMean.c"
 #elif defined( __android__ ) || defined( ANDROID )
 #include "CNFGEGLDriver.c"
+#elif defined(EGL_HEADLESS)
+#include "CNFGEGLHeadlessDriver.c"
 #else
 #include "CNFGXDriver.c"
 #endif
